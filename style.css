@@ -33,16 +33,32 @@ footer ul {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
 
     body,
     main,
-    footer,
-    section,
     ul {
         flex-direction: column;
         text-align: center;
     }
+
+    footer ul {
+        flex-direction: column;
+         text-align: center;
+        gap: 12px;
+    }
+
+    .button_icon{
+        margin: 4px;
+    }
+
+    #padding{
+        flex-direction: column;
+         text-align: center;
+        gap: 12px;
+       
+    }
+   
 }
 
 #first_box {
@@ -230,7 +246,7 @@ footer h2 {
     padding-top: 10px;
 }
 
-#script {
+#script_box {
     font-family: "Rouge Script", cursive;
     font-weight: bold;
     font-style: normal;
