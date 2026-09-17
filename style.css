@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+ul {
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+footer ul {
+    gap: 100px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    body,
+    main,
+    footer,
+    section,
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+#first_box {
+    margin-right: auto;
+
+}
+
+.button_icon {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #AACCD6;
+
+}
+
+.button_icon:active {
+    opacity: .5;
+}
+
+li:active {
+    opacity: .5;
+}
+
+
+
+nav ul {
+    justify-content: flex-end;
+}
+
+#padding {
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+}
+
+header {
+    background-color: #E0218A;
+    color: white;
+}
+
+nav {
+    background-color: #FFF0E4;
+
+
+}
+
+section h1 {
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+section button {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: #3368A0;
+    padding: 10px 90px;
+    border-style: none;
+    border-radius: 5px;
+
+
+}
+
+section button:hover {
+    box-shadow: 10px 5px 5px 0px #2a3c4e;
+}
+
+section button:active {
+    opacity: 0.8;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+
+}
+
+section {
+    overflow: hidden;
+}
+
+.firstpart {
+    padding: 20px 35px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+    background-color: #C8DFDB;
+    position: relative;
+}
+
+.firstpart h2 {
+    text-align: center;
+    position: relative;
+    z-index: 4;
+}
+
+.firstpart button {
+    position: relative;
+    z-index: 2;
+}
+
+
+#model {
+
+    z-index: 4;
+}
+
+#floral {
+    position: absolute;
+    left: 1px;
+    bottom: 15px;
+    z-index: 1;
+    opacity: 0.5;
+
+}
+
+.secondpart {
+    background-color: #F2EFE7;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.secondpart li img {
+    padding: 10px;
+}
+
+.thirdpart {
+
+    text-align: center;
+    background-color: #AACCD6;
+    position: relative;
+}
+
+.thirdpart p {
+    padding: 50px;
+    font-style: bold;
+    font-size: 1.5rem;
+}
+
+.into {
+    flex: 1;
+}
+
+.category img {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    display: block;
+    background-color: rgb(222, 21, 118);
+    color: white;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+
+
+}
+
+footer li {
+    list-style: none;
+
+}
+
+footer h2 {
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+#script {
+    font-family: "Rouge Script", cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+
+}
+
+#leaves {
+
+    position: absolute;
+    left: 1px;
+    top: 50px;
+
+    width: 300px;
+    z-index: 1;
+    opacity: 0.2;
+    z-index: 1;
+    max-width: 40%;
+    animation: lick linear 3s infinite;
+}
+
+
+#leaves2 {
+
+    position: absolute;
+    right: 1px;
+    top: 50px;
+    width: 300px;
+    z-index: 1;
+    opacity: 0.2;
+    z-index: 1;
+    max-width: 40%;
+    transform: scaleX(-1);
+    animation: lick2 linear 3s infinite;
+
+
+}
+
+.thirdpart button {
+    position: relative;
+    z-index: 2;
+}
+
+.thirdpart p {
+    position: relative;
+    z-index: 3;
+}
+
+@keyframes lick {
+    0% {
+        transform: translate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transition: rotate(-5deg) translateY(0px);
+    }
+
+    75% {
+        transition: rotate(-10deg) translateY(0px);
+    }
+
+    100% {
+        transform: translate(-5deg) translateY(0px);
+    }
+}
+
+@keyframes lick2 {
+    0% {
+        transform: translate(0deg) scaleX(-1);
+    }
+
+    25% {
+        transform: rotate(-10deg) scaleX(-1);
+    }
+
+    50% {
+        transition: rotate(5deg) scaleX(-1);
+    }
+
+    75% {
+        transition: rotate(+0deg) scaleX(-1);
+    }
+
+    100% {
+        transform: translate(5deg) scaleX(-1);
+    }
+}
