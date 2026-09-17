@@ -212,11 +212,10 @@ section {
 }
 
 .category img {
-    height: 100%;
-    width: 100%;
-    max-width: 400px;
-    max-height: 600px;
+    height: 400px;
+    width: 300px;
     object-fit: cover;
+    object-position: top;
 }
 
 footer {
